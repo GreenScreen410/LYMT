@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="lymt",
-    version="0.1.0",
+    version="0.1.1",
     description="Let Your Model Think",
     author="GreenScreen410",
     author_email="pauljjang410@gmail.com",
@@ -10,6 +10,7 @@ setup(
     maintainer_email="pauljjang410@gmail.com",
     url="https://github.com/GreenScreen410/lymt",
     packages=find_packages(),
+    package_data={"lymt": ["prompt/*"]},
     license="MIT",
     keywords=[
         "llm",
@@ -22,5 +23,5 @@ setup(
         "chatgpt",
         "cot",
     ],
-    install_requires=["openai==1.56.0"],
+    install_requires=["openai>=1.56.0", "anthropic>=0.40.0", "ollama>=0.4.2"],
 )

@@ -3,11 +3,11 @@ import os
 
 class PromptManager:
     def __init__(self):
-        self.prompt_dir = os.path.join(os.path.dirname(__file__), "prompt/templates")
+        self.prompt_dir = os.path.join(os.path.dirname(__file__), "prompt")
 
     def list(self):
         """
-        List all prompt files in the 'templates' directory.
+        List all prompt files in the 'prompt' directory.
 
         Returns:
             list: A list of prompt filenames
