@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "lymt"
+version = "0.1.0"
+description = "Let Your Model Think"
+authors = ["GreenScreen410 <pauljjang410@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+openai = "^1.56.0"
+ollama = "^0.4.2"
+anthropic = "^0.40.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
